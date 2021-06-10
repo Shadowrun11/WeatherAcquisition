@@ -1,11 +1,8 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using WeatherAcquisition.DAL.Entities.Base;
 
 namespace WeatherAcquisition.DAL.Entities
 {
-    public class DataSource
+    public class DataSource : NamedEntity
     {
         public string Description { get; set; }
 

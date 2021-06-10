@@ -5,11 +5,9 @@ namespace WeatherAcquisition.DAL.Context
 {
     public class DataDB: DbContext
     {
-        public DbSet<DataValue> Values { get; set; }
-         
+        public DbSet<DataValue> Values { get; set; }         
         public DbSet<DataSource> Sources { get; set; }
         public DataDB(DbContextOptions<DataDB> options) :base(options) {}
-
         protected override void OnModelCreating(ModelBuilder model) 
         { 
             base.OnModelCreating(model);
