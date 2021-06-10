@@ -38,9 +38,7 @@ namespace WeatherAcquisition.ConsoleUI
             Console.WriteLine("Completed");
             Console.ReadLine();
 
-            await host.StopAsync();
-
-           
+            await host.StopAsync();           
         }
     }
 }
